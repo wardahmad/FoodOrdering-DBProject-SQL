@@ -285,9 +285,7 @@ VALUES (1, 5);
 SELECT *
 FROM customer_order, payment
 WHERE customer_order.Order_Id = payment.Ord_Id 
-AND payment.Net_Price > (SELECT Net_Price
-						FROM payment
-						WHERE Payment_Id = 1);
+AND payment.Net_Price > (SELECT Net_Price FROM payment WHERE Payment_Id = 1);
 ```
 <img align="center" src="images/OuterQuery.JPG">
 
