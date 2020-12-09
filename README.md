@@ -15,6 +15,7 @@
     - `SELECT` statement.
     - `DELETE` statement.
     - `UPDATE` statement.
+    - `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`
 * Aggregate Functions in SQL.
 * Resources.
 
@@ -265,6 +266,14 @@ VALUES (1, 5);
 ## UPDATE statement:
 `UPDATE FOOD SET Price = 2 WHERE Food_Id = 1;`
 <img align="center" src="images/UpdatePrice.JPG">
+
+## LEFT OUTER JOIN statement:
+`SELECT * FROM category left OUTER JOIN food ON category.C_Id=food.Cat_Id;`
+<img align="center" src="images/OUTER_JOIN.JPG">
+
+## RIGHT OUTER JOIN statement:
+`SELECT * FROM order_food RIGHT OUTER JOIN food ON order_food.FoodID=food.Food_Id WHERE order_food.OrderID = 2;`
+<img align="center" src="images/RIGHT_OUTER.JPG">
 
 ## Aggregate Functions in SQL:
 `SELECT MAX(Amount) FROM customer_order;`
