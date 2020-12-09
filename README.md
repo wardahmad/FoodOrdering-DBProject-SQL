@@ -17,6 +17,7 @@
     - `UPDATE` statement.
     - `LEFT OUTER JOIN`, `RIGHT OUTER JOIN`
 * Aggregate Functions in SQL.
+* Outer Query.
 * Resources.
 
 ## Entity Relationship Schema Diagram(ERD):
@@ -232,10 +233,10 @@ CREATE TABLE ORDER_FOOD (
 
 INSERT INTO ORDER_FOOD (OrderID, FoodID)
 VALUES (1, 1),
-	   (1, 2),
-       (2, 3),
-	   (3, 1),
-       (3, 3);
+(1, 2),
+(2, 3),
+(3, 1),
+(3, 3);
 
 ```
 
@@ -279,6 +280,17 @@ VALUES (1, 5);
 `SELECT MAX(Amount) FROM customer_order;`
 <img align="center" src="images/maxAmount.JPG">
 
+## Outer Query:
+```sql
+SELECT *
+FROM customer_order, payment
+WHERE customer_order.Order_Id = payment.Ord_Id 
+AND payment.Net_Price > (SELECT Net_Price
+						FROM payment
+						WHERE Payment_Id = 1);
+```
+<img align="center" src="images/OuterQuery.JPG">
+
 
 ## Resources:
 * <a href="https://creately.com/">Creately.com</a>
@@ -290,3 +302,4 @@ VALUES (1, 5);
 * <a href="https://www.youtube.com/watch?v=Kt9XfLKPiJo">ERD Cardinalities</a>
 * <a href="https://www.youtube.com/watch?v=QpdhBUYk7Kk">Entity Relationship Diagram (ERD) Tutorial - Part 1</a>
 * <a href="https://www.youtube.com/watch?v=-CuY5ADwn24">Entity Relationship Diagram (ERD) Tutorial - Part 2</a>
+* <a href="https://www.w3resource.com/sql/subqueries/understanding-sql-subqueries.php">SQL Subqueries</a>
