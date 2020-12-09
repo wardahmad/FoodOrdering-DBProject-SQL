@@ -4,7 +4,7 @@
 - Instructor: <a href="#">Dr.Budoor Allehyani</a>
 
 # (Food Ordering System)
-## Contents:
+### Contents:
 * An ER schema diagram for the `food_ordering` Database.
 * Initial Conceptual Design of the `food_ordering` Database.
 * Relational Database Schema.
@@ -78,12 +78,12 @@
 
 ## SQL Queries:
 
-## CREATE DATABASE
+### CREATE DATABASE
 ```sql
 CREATE DATABASE FOOD_ORDERING;
 ```
 
-## CUSTOMER TABLE (CREATE and INSERT)
+### CUSTOMER TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE CUSTOMER (
     Cust_Id int NOT NULL AUTO_INCREMENT,
@@ -103,7 +103,7 @@ VALUES (DEFAULT, '888665555', 'John@hotmail.com', 'John', 'Smith'),
 
 ```
 
-## MANAGER TABLE (CREATE and INSERT)
+### MANAGER TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE MANAGER (
     M_Id int NOT NULL AUTO_INCREMENT,
@@ -119,7 +119,7 @@ VALUES (DEFAULT, 'Khaleel', 'Ahmed'),
 
 ```
 
-## CUSTOMER_ORDER TABLE (CREATE and INSERT)
+### CUSTOMER_ORDER TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE CUSTOMER_ORDER (
     Order_Id int NOT NULL AUTO_INCREMENT,
@@ -140,7 +140,7 @@ VALUES (DEFAULT, 50, '2020-12-03', '05:30:44', 1, 3),
 
 ```
 
-## PAYMENT TABLE (CREATE and INSERT)
+### PAYMENT TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE PAYMENT (
     Payment_Id int NOT NULL AUTO_INCREMENT,
@@ -158,7 +158,7 @@ VALUES (DEFAULT, 70, 70, 1),
 
 ```
 
-## DELIVERY TABLE (CREATE and INSERT)
+### DELIVERY TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE DELIVERY (
     Delivery_Id int NOT NULL AUTO_INCREMENT,
@@ -177,7 +177,7 @@ VALUES (DEFAULT, 'Makkah', '06:30:00', '07:30:00', 1),
 
 ```
 
-## CATEGORY TABLE (CREATE and INSERT)
+### CATEGORY TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE CATEGORY (
     C_Id int NOT NULL AUTO_INCREMENT,
@@ -192,7 +192,7 @@ VALUES (DEFAULT, 'Chicken'),
 
 ```
 
-## FOOD TABLE (CREATE and INSERT)
+### FOOD TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE FOOD (
     Food_Id int NOT NULL AUTO_INCREMENT,
@@ -220,7 +220,7 @@ VALUES (DEFAULT, 'Big Baik Spicy Sandwich', 10,
 
 ```
 
-## ORDER_FOOD TABLE (CREATE and INSERT)
+### ORDER_FOOD TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE ORDER_FOOD (
     OrderID int NOT NULL,
@@ -238,7 +238,7 @@ VALUES (1, 1),
 
 ```
 
-## CUST_Buy_FOOD TABLE (CREATE and INSERT)
+### CUST_Buy_FOOD TABLE (CREATE and INSERT)
 ```sql
 CREATE TABLE CUST_BUY_FOOD (
     F_Id int NOT NULL ,
@@ -258,15 +258,15 @@ VALUES (1, 5);
 `SELECT * FROM FOOD Join CATEGORY ON C_Id = Cat_Id;`
 <img align="center" src="images/selectJoin.JPG">
 
-### DELETE statement:
+## DELETE statement:
 `DELETE FROM FOOD WHERE Food_Id=4;`
 <img align="center" src="images/delete.JPG">
 
-### UPDATE statement:
+## UPDATE statement:
 `UPDATE FOOD SET Price = 2 WHERE Food_Id = 1;`
 <img align="center" src="images/UpdatePrice.JPG">
 
-### Aggregate Functions in SQL:
+## Aggregate Functions in SQL:
 `SELECT MAX(Amount) FROM customer_order;`
 <img align="center" src="images/maxAmount.JPG">
 
