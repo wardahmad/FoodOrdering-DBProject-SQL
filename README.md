@@ -2,6 +2,7 @@
 
 - Course Name: Database Systems
 - Instructor: <a href="#">Dr.Budoor Allehyani</a>
+- Student Name: <a href="https://www.linkedin.com/in/wardaahmad43/">Wardah Ahmed Almalki</a>
 
 # (Food Ordering System)
 ### Contents:
