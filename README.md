@@ -6,11 +6,11 @@
 
 # (Food Ordering System)
 ### Contents:
-* An ER schema diagram for the `food_ordering` Database.
-* Initial Conceptual Design of the `food_ordering` Database.
+* ER schema diagram for`food_ordering` Database.
+* Initial Conceptual Design.
 * Relational Database Schema.
-* EEER Diagram
-* The `CREATE DATABASE`,`CREATE TABLE` Commands.
+* EER Diagram
+* `CREATE DATABASE`,`CREATE TABLE` Commands.
 * SQL Queries:
     - `INSERT` statement.
     - `SELECT` statement.
@@ -25,40 +25,40 @@
 <img align="center" src="images/ERD.jpg">
 
 ## Conceptual Design / Description:
-* An entity type `CUSTOMER` with 4 attributes:
+* Entity type `CUSTOMER` with 4 attributes:
     - Cust_Id: key attributes.
     - Mobile_Num
     - Email
     - Name: Composite Attribute (FName, Lname) 
 
-* An entity type `CUSTOMER_ORDER` with 4 attributes:
+* Entity type `CUSTOMER_ORDER` with 4 attributes:
     - Order_Id: key attributes.
     - Amount
     - Order_Date
     - Order_Time
 
-* An entity type `FOOD` with 4 attributes:
+* Entity type `FOOD` with 4 attributes:
     - Food_Id: key attributes.
     - Name
     - Price  
     - Description
 
-* An entity type `CATEGORY` with 2 attributes:
+* Entity type `CATEGORY` with 2 attributes:
     - C_Id: key attributes.
     - C_Name
 
-* An entity type `DELIVERY` with 4 attributes:
+* Entity type `DELIVERY` with 4 attributes:
     - Delivery _Id: key attributes.
     - Location
     - Arrival_time 
     - Departure_time
 
-* An entity type `PAYMENT` with 3 attributes:
+* Entity type `PAYMENT` with 3 attributes:
     - Payment _Id: key attributes.
     - Net_Price
     - Cash_Paid
 
-* An entity type `MANAGER` with 2 attributes:
+* Entity type `MANAGER` with 2 attributes:
     - M_Id: key attributes.
     - M_Name: Composite Attribute (FName, LName) 
 
@@ -76,7 +76,7 @@
 <img align="center" src="images/DBSche.JPG">
 <img align="center" src="images/DBschema.jpg">
 
-## EEER Diagram:
+## EER Diagram:
 <img align="center" src="images/EEERDiagram.JPG">
 
 ## SQL Queries:
